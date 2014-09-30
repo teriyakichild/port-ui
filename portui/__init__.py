@@ -1,7 +1,7 @@
 import os, sys, inspect
 import re
 from importlib import import_module
-from myui.controllers import run_server
+from portui.controllers import run_server
 
 def main():
     # Find controller directory
@@ -19,7 +19,7 @@ def main():
     # Load controllers
     controllers = {}
     for controller in list_of_controllers:
-        controllers[controller] = import_module(controller, 'myui.controllers')
+        controllers[controller] = import_module(controller, 'portui.controllers')
         print 'Controller[{0}] loaded'.format(controller)
 
     # Build handlers
