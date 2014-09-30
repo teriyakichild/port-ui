@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block title %}
+ - New Entry
+{% end %}
+{% block body %}
+
+      <div class="rs-sidebar rs-pull-right">
+        <div class="rs-inner">
+          <h3>Setting Up This Item</h3>
+          <h4>Next steps help text</h4>
+          <p>Short blurb about best practices next steps with this item. Try to keep this to 3 lines maximum.</p>
+          <p><a target="blank" href="#">More Details About Blurb &raquo;</a></p>
+          <hr>
+          <h4>Help Me With...</h4>
+          <ul>
+            <li><a target="blank" href="#">Best Practice Number One</a></li>
+            <li><a target="blank" href="#">Best Practice Number Two</a></li>
+            <li><a target="blank" href="#">Best Practice Number Three</a></li>
+          </ul>
+          <p><a target="blank" href="#">Learn More about This Product &raquo;</a></p>
+          <hr>
+          <h4>What's Next</h4>
+          <ul>
+            <li><a target="blank" href="#">Top Action Number One</a></li>
+            <li><a target="blank" href="#">Top Action Number Two</a></li>
+            <li><a target="blank" href="#">Top Action Number Three</a></li>
+          </ul>
+          <p><a target="blank" href="#">Visit Our Knowledge Center &raquo;</a></p>
+        </div>
+      </div>
+      <div class="rs-content">
+        <form class="rs-form-create">
+          <div class="rs-detail-section">
+            <div class="rs-detail-section-header">
+              <h2 class="rs-page-title">New PORT Entry</h3>
+              <div class="rs-detail-section-title">Details</div>
+            </div>
+            <div class="rs-detail-section-body">
+              
+              <div class="rs-control-group">
+                <label class="rs-control-label">Project Name</label>
+                <div class="rs-controls">
+                  <select>
+                    <option value="cloudfeeds">CloudFeeds</option>
+                    <option value="signup" selected="selected">Signup</option>
+                    <option value="customer">Customer</option>
+                    <option value="ci-smix">CI Servicemix</option>
+                  </select>
+                </div>
+              </div>
+              <div class="rs-control-group">
+                <label class="rs-control-label">Group</label>
+                <div class="rs-controls">
+                  <select>
+                    <option value="product">Product</option>
+                    <option value="ops" selected="selected">Ops</option>
+                    <option value="dev">Dev</option>
+                  </select>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="rs-detail-section">
+            <div class="rs-detail-section-header">
+              <div class="rs-detail-section-title">Score Categories</div>
+
+
+
+            </div>
+            <div class="rs-detail-section-body">
+              <ul class="rs-tabs">
+                <li class="active"><a href="#rackspace-images">Rackspace <span class="rs-quiet">(9)</span></a></li>
+                <li><a href="#saved-images">Saved <span class="rs-quiet">(3)</span></a></li>
+              </ul>
+              <div class="rs-tab-content">
+                <div class="rs-tab-pane active" id="rackspace-images"><div class="rs-embedded-list-table-wrapper rs-embedded-small">
+              </div>
+            </div>
+          </div>
+          <div class="rs-collapsible-section rs-detail-section">
+            <div class="rs-detail-section-header">
+              <div class="rs-caret"></div>
+              <div class="rs-detail-section-title">Add Items</div>
+            </div>
+            <div class="rs-detail-section-body">
+              <div class="rs-btn-group">
+                <button class="rs-btn rs-popover-source" type="button" data-popover-target="add-items-button" data-popover="add-items-popover" data-popover-position="bottom-right" id="add-items-button">Add Things</button>
+              </div>
+              <div class="rs-embedded-list-table-wrapper rs-embedded-medium" id="detail-example-embedded-list-table">
+                <table class="rs-list-table rs-embedded-list-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>IPv4</th>
+                      <th>IPv6</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="rs-table-text">Item One</td>
+                      <td class="rs-table-text">101.122.11.222</td>
+                      <td class="rs-table-text"><span class="rs-quiet">None</span></td>
+                    </tr>
+                    <tr>
+                      <td class="rs-table-text">Item Two</td>
+                      <td class="rs-table-text">10.111.22.112</td>
+                      <td class="rs-table-text"><span class="rs-quiet">None</span></td>
+                    </tr>
+                    <tr>
+                      <td class="rs-table-text">Item Two</td>
+                      <td class="rs-table-text">10.111.22.112</td>
+                      <td class="rs-table-text"><span class="rs-quiet">None</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="rs-collapsible-section rs-detail-section collapsed">
+            <div class="rs-detail-section-header">
+              <div class="rs-caret"></div>
+              <div class="rs-detail-section-title">Optional Settings</div>
+              <div class="rs-detail-section-subtitle">This section is optional, so it&#39;s collapsed.</div>
+            </div>
+            <div class="rs-detail-section-body">
+              <div class="rs-control-group">
+                <label class="rs-control-label">Your Age</label>
+                <div class="rs-controls">
+                  <input type="text" class="rs-input-medium">
+                </div>
+              </div>
+              <div class="rs-control-group">
+                <label class="rs-control-label">Favorite Color</label>
+                <div class="rs-controls">
+                  <select>
+                    <option value="Yellow Ochre">Yellow Ochre</option>
+                    <option value="Green" selected="Amber">Amber</option>
+                    <option value="Sage">Sage</option>
+                    <option value="Azule">Azule</option>
+                    <option value="Kelly Green">Kelly Green</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rs-detail-section">
+            <div class="rs-detail-section-header rs-btn-group">
+              <button class="rs-btn rs-btn-primary" type="button">Create Item</button>
+              <a href="javascript:void(0);" class="rs-btn rs-btn-link">Cancel</a>
+            </div>
+          </div>
+        </form>
+    </div>
+
+{% end %}
