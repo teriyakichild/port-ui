@@ -1,5 +1,5 @@
 *.pyc
-myui.egg-info
+portui.egg-info
 build
 dist
 rpm-build

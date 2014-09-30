@@ -3,7 +3,7 @@ from sys import path
 
 path.insert(0, '.')
 
-NAME = "myui"
+NAME = "portui"
 
 if __name__ == "__main__":
 
@@ -12,18 +12,18 @@ if __name__ == "__main__":
         version="0.1.0",
         author="Tony Rogers",
         author_email="tony.rogers@rackspace.com",
-        url="https://github.com/teriyakichild/myui",
+        url="https://github.com/teriyakichild/portui",
         license='internal use',
-        packages=[NAME, 'myui/controllers'],
+        packages=[NAME, 'portui/controllers'],
         package_dir={NAME: NAME},
         package_data={
-                  'myui': ['myui/*'],
+                  'portui': ['portui/*'],
                      },
         include_package_data=True,
-        description="MyUI - Easily customizable Tornado UI",
+        description="PortUI - UI for PORT",
 
         install_requires=['tornado==3.2'],
         entry_points={
-            'console_scripts': ['myui = myui:main'],
+            'console_scripts': ['portui = portui:main'],
         }
     )
