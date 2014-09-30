@@ -22,7 +22,7 @@ if __name__ == "__main__":
         include_package_data=True,
         description="PortUI - UI for PORT",
 
-        install_requires=['tornado==3.2'],
+        install_requires=['tornado==4.0'],
         entry_points={
             'console_scripts': ['portui = portui:main'],
         }
