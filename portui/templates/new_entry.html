@@ -1,4 +1,16 @@
 {% extends "base.html" %}
+{% block head %}
+    <script type="application/javascript">
+        $(document).ready(function() {
+
+                $(".rs-collapsible-section .rs-detail-section-header").click(function()
+                {
+                        $(this).parent().toggleClass("collapsed expanded");
+                });
+
+        });
+    </script>
+{% end %}
 {% block title %}
  - New Entry
 {% end %}
@@ -6,16 +18,14 @@
       <!-- Help Sidebar  -->
       <div class="rs-sidebar rs-pull-right">
         <div class="rs-inner">
-          <h3>PORT Score Help</h3>
+          <h3>Product Reliability Help</h3>
           <h4>Help and stuff</h4>
           <p>Short blurb about best practices next steps with this item. Try to keep this to 3 lines maximum.</p>
           <p><a target="blank" href="#">More Details About Blurb &raquo;</a></p>
           <hr>
           <h4>Help Me With...</h4>
           <ul>
-            <li><a target="blank" href="#">Best Practice Number One</a></li>
-            <li><a target="blank" href="#">Best Practice Number Two</a></li>
-            <li><a target="blank" href="#">Best Practice Number Three</a></li>
+            <li><a target="blank" href="https://one.rackspace.com/display/prodrel/Ops+Scorecard">Ops Scorecard</a></li>
           </ul>
           <p><a target="blank" href="#">Learn More about This Product &raquo;</a></p>
           <hr>
@@ -65,57 +75,63 @@
             <div class="rs-detail-section-header">
               <div class="rs-detail-section-title">Score Categories</div>
               <table>
-                  <tr><td><h5>Llama! - Logging, Alerting, Monitoring</h5></td><td><input type="radio" name="level1"><input type="radio" name="level2"><input type="radio" name="level3"><input type="radio" name="level5"><input type="radio" name="level8"></td></tr>
-
+                  <tr>
+                      <th></th>
+                      <th>Level 1<br />Ad Hoc</th>
+                      <th>Level 2<br />Standardizing</th>
+                      <th>Level 3<br />Industry Standard</th>
+                      <th>Level 5<br />Industry Leader</th>
+                      <th>Level 8<br />World Class</th>
+                  </tr>
+                  <tr>
+                      <td><h5>Documentation</h5></td>
+                      <td><input type="radio" name="level1"></td>
+                      <td><input type="radio" name="level2"></td>
+                      <td><input type="radio" name="level3"></td>
+                      <td><input type="radio" name="level5"></td>
+                      <td><input type="radio" name="level8"></td>
+                  </tr>
+                  <tr>
+                      <td><h5>Architectural Operability</h5></td>
+                      <td><input type="radio" name="level1"></td>
+                      <td><input type="radio" name="level2"></td>
+                      <td><input type="radio" name="level3"></td>
+                      <td><input type="radio" name="level5"></td>
+                      <td><input type="radio" name="level8"></td>
+                  </tr>
+                  <tr>
+                      <td><h5>Recoverability</h5></td>
+                      <td><input type="radio" name="level1"></td>
+                      <td><input type="radio" name="level2"></td>
+                      <td><input type="radio" name="level3"></td>
+                      <td><input type="radio" name="level5"></td>
+                      <td><input type="radio" name="level8"></td>
+                  </tr>
+                  <tr>
+                      <td><h5>Llama! - Logging, Alerting, Monitoring</h5></td>
+                      <td><input type="radio" name="level1"></td>
+                      <td><input type="radio" name="level2"></td>
+                      <td><input type="radio" name="level3"></td>
+                      <td><input type="radio" name="level5"></td>
+                      <td><input type="radio" name="level8"></td>
+                  </tr>
+                  <tr>
+                      <td><h5>Automation</h5></td>
+                      <td><input type="radio" name="level1"></td>
+                      <td><input type="radio" name="level2"></td>
+                      <td><input type="radio" name="level3"></td>
+                      <td><input type="radio" name="level5"></td>
+                      <td><input type="radio" name="level8"></td>
+                  </tr>
+                  <tr>
+                      <td><h5>Standards</h5></td>
+                      <td><input type="radio" name="level1"></td>
+                      <td><input type="radio" name="level2"></td>
+                      <td><input type="radio" name="level3"></td>
+                      <td><input type="radio" name="level5"></td>
+                      <td><input type="radio" name="level8"></td>
+                  </tr>
               </table>
-            </div>
-            <div class="rs-detail-section-body">
-              <ul class="rs-tabs">
-                <li class="active"><a href="#rackspace-images">Rackspace <span class="rs-quiet">(9)</span></a></li>
-                <li><a href="#saved-images">Saved <span class="rs-quiet">(3)</span></a></li>
-              </ul>
-              <div class="rs-tab-content">
-                <div class="rs-tab-pane active" id="rackspace-images"><div class="rs-embedded-list-table-wrapper rs-embedded-small">
-              </div>
-            </div>
-          </div>
-          <div class="rs-collapsible-section rs-detail-section">
-            <div class="rs-detail-section-header">
-              <div class="rs-caret"></div>
-              <div class="rs-detail-section-title">Add Items</div>
-            </div>
-            <div class="rs-detail-section-body">
-              <div class="rs-btn-group">
-                <button class="rs-btn rs-popover-source" type="button" data-popover-target="add-items-button" data-popover="add-items-popover" data-popover-position="bottom-right" id="add-items-button">Add Things</button>
-              </div>
-              <div class="rs-embedded-list-table-wrapper rs-embedded-medium" id="detail-example-embedded-list-table">
-                <table class="rs-list-table rs-embedded-list-table">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>IPv4</th>
-                      <th>IPv6</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="rs-table-text">Item One</td>
-                      <td class="rs-table-text">101.122.11.222</td>
-                      <td class="rs-table-text"><span class="rs-quiet">None</span></td>
-                    </tr>
-                    <tr>
-                      <td class="rs-table-text">Item Two</td>
-                      <td class="rs-table-text">10.111.22.112</td>
-                      <td class="rs-table-text"><span class="rs-quiet">None</span></td>
-                    </tr>
-                    <tr>
-                      <td class="rs-table-text">Item Two</td>
-                      <td class="rs-table-text">10.111.22.112</td>
-                      <td class="rs-table-text"><span class="rs-quiet">None</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </div>
           </div>
           <div class="rs-collapsible-section rs-detail-section collapsed">
