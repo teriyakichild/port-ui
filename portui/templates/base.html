@@ -47,7 +47,32 @@
 				<div class="rs-main">
 					<div class="rs-content rs-panel">
 						<div class="rs-inner">
-							<h2 class="rs-page-title">Port Survey Tool</h2>
+							<h2 class="rs-page-title">Product Assessment Tool</h2>
+                                                        {% block sidebar %}
+                                                              <!-- Help Sidebar  -->
+                                                              <div class="rs-sidebar rs-pull-right">
+                                                                <div class="rs-inner">
+                                                                  <h3>Product Reliability Help</h3>
+                                                                  <h4>Help and stuff</h4>
+                                                                  <p>Short blurb about best practices next steps with this item. Try to keep this to 3 lines maximum.</p>
+                                                                  <p><a target="blank" href="#">More Details About Blurb &raquo;</a></p>
+                                                                  <hr>
+                                                                  <h4>Help Me With...</h4>
+                                                                  <ul>
+                                                                    <li><a target="blank" href="https://one.rackspace.com/display/prodrel/Ops+Scorecard">Ops Scorecard</a></li>
+                                                                  </ul>
+                                                                  <p><a target="blank" href="#">Learn More about This Product &raquo;</a></p>
+                                                                  <hr>
+                                                                  <h4>What's Next</h4>
+                                                                  <ul>
+                                                                    <li><a target="blank" href="#">Top Action Number One</a></li>
+                                                                    <li><a target="blank" href="#">Top Action Number Two</a></li>
+                                                                    <li><a target="blank" href="#">Top Action Number Three</a></li>
+                                                                  </ul>
+                                                                  <p><a target="blank" href="#">Visit Our Knowledge Center &raquo;</a></p>
+                                                                </div>
+                                                              </div>
+                                                        {% end %}
 							{% block body %}
 
 							{% end %}
