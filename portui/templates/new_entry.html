@@ -16,7 +16,7 @@
 {% end %}
 {% block body %}
       <div class="rs-content">
-        <form class="rs-form-create">
+        <form class="rs-form-create" method="POST">
           <div class="rs-detail-section">
             <div class="rs-detail-section-header">
               <h2 class="rs-page-title">New Product Assessment</h3>
@@ -137,7 +137,7 @@
           </div>
           <div class="rs-detail-section">
             <div class="rs-detail-section-header rs-btn-group">
-              <button class="rs-btn rs-btn-primary" type="button">Submit</button>
+                <input class="rs-btn rs-btn-primary" type="submit" value="Submit" />
               <a href="javascript:void(0);" class="rs-btn rs-btn-link">Cancel</a>
             </div>
           </div>
