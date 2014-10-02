@@ -15,34 +15,11 @@
  - New Entry
 {% end %}
 {% block body %}
-      <!-- Help Sidebar  -->
-      <div class="rs-sidebar rs-pull-right">
-        <div class="rs-inner">
-          <h3>Product Reliability Help</h3>
-          <h4>Help and stuff</h4>
-          <p>Short blurb about best practices next steps with this item. Try to keep this to 3 lines maximum.</p>
-          <p><a target="blank" href="#">More Details About Blurb &raquo;</a></p>
-          <hr>
-          <h4>Help Me With...</h4>
-          <ul>
-            <li><a target="blank" href="https://one.rackspace.com/display/prodrel/Ops+Scorecard">Ops Scorecard</a></li>
-          </ul>
-          <p><a target="blank" href="#">Learn More about This Product &raquo;</a></p>
-          <hr>
-          <h4>What's Next</h4>
-          <ul>
-            <li><a target="blank" href="#">Top Action Number One</a></li>
-            <li><a target="blank" href="#">Top Action Number Two</a></li>
-            <li><a target="blank" href="#">Top Action Number Three</a></li>
-          </ul>
-          <p><a target="blank" href="#">Visit Our Knowledge Center &raquo;</a></p>
-        </div>
-      </div>
       <div class="rs-content">
         <form class="rs-form-create">
           <div class="rs-detail-section">
             <div class="rs-detail-section-header">
-              <h2 class="rs-page-title">New PORT Entry</h3>
+              <h2 class="rs-page-title">New Product Assessment</h3>
               <div class="rs-detail-section-title">Details</div>
             </div>
             <div class="rs-detail-section-body">
@@ -73,7 +50,7 @@
           </div>
           <div class="rs-detail-section">
             <div class="rs-detail-section-header">
-              <div class="rs-detail-section-title">Score Categories</div>
+              <div class="rs-detail-section-title">Categories</div>
               <table>
                   <tr>
                       <th></th>
@@ -85,85 +62,82 @@
                   </tr>
                   <tr>
                       <td><h5>Documentation</h5></td>
-                      <td><input type="radio" name="level1"></td>
-                      <td><input type="radio" name="level2"></td>
-                      <td><input type="radio" name="level3"></td>
-                      <td><input type="radio" name="level5"></td>
-                      <td><input type="radio" name="level8"></td>
+                      <td><input type="radio" name="documentation" value="level1"></td>
+                      <td><input type="radio" name="documentation" value="level2"></td>
+                      <td><input type="radio" name="documentation" value="level3"></td>
+                      <td><input type="radio" name="documentation" value="level5"></td>
+                      <td><input type="radio" name="documentation" value="level8"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="5"><textarea name="documentation" class="rs-input-xlarge" placeholder="Comments" style="width:100%;"></textarea></td>
                   </tr>
                   <tr>
                       <td><h5>Architectural Operability</h5></td>
-                      <td><input type="radio" name="level1"></td>
-                      <td><input type="radio" name="level2"></td>
-                      <td><input type="radio" name="level3"></td>
-                      <td><input type="radio" name="level5"></td>
-                      <td><input type="radio" name="level8"></td>
+                      <td><input type="radio" name="architectural-operability" value="level1"></td>
+                      <td><input type="radio" name="architectural-operability" value="level2"></td>
+                      <td><input type="radio" name="architectural-operability" value="level3"></td>
+                      <td><input type="radio" name="architectural-operability" value="level5"></td>
+                      <td><input type="radio" name="architectural-operability" value="level8"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="5"><textarea name="architectural-operability" class="rs-input-xlarge" placeholder="Comments" style="width:100%;"></textarea></td>
                   </tr>
                   <tr>
                       <td><h5>Recoverability</h5></td>
-                      <td><input type="radio" name="level1"></td>
-                      <td><input type="radio" name="level2"></td>
-                      <td><input type="radio" name="level3"></td>
-                      <td><input type="radio" name="level5"></td>
-                      <td><input type="radio" name="level8"></td>
+                      <td><input type="radio" name="recoverability" value="level1"></td>
+                      <td><input type="radio" name="recoverability" value="level2"></td>
+                      <td><input type="radio" name="recoverability" value="level3"></td>
+                      <td><input type="radio" name="recoverability" value="level5"></td>
+                      <td><input type="radio" name="recoverability" value="level8"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="5"><textarea name="recoverability" class="rs-input-xlarge" placeholder="Comments" style="width:100%;"></textarea></td>
                   </tr>
                   <tr>
                       <td><h5>Llama! - Logging, Alerting, Monitoring</h5></td>
-                      <td><input type="radio" name="level1"></td>
-                      <td><input type="radio" name="level2"></td>
-                      <td><input type="radio" name="level3"></td>
-                      <td><input type="radio" name="level5"></td>
-                      <td><input type="radio" name="level8"></td>
+                      <td><input type="radio" name="llama" value="level1"></td>
+                      <td><input type="radio" name="llama" value="level2"></td>
+                      <td><input type="radio" name="llama" value="level3"></td>
+                      <td><input type="radio" name="llama" value="level5"></td>
+                      <td><input type="radio" name="llama" value="level8"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="5"><textarea name="llama" class="rs-input-xlarge" placeholder="Comments" style="width:100%;"></textarea></td>
                   </tr>
                   <tr>
                       <td><h5>Automation</h5></td>
-                      <td><input type="radio" name="level1"></td>
-                      <td><input type="radio" name="level2"></td>
-                      <td><input type="radio" name="level3"></td>
-                      <td><input type="radio" name="level5"></td>
-                      <td><input type="radio" name="level8"></td>
+                      <td><input type="radio" name="automation" value="level1"></td>
+                      <td><input type="radio" name="automation" value="level2"></td>
+                      <td><input type="radio" name="automation" value="level3"></td>
+                      <td><input type="radio" name="automation" value="level5"></td>
+                      <td><input type="radio" name="automation" value="level8"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="5"><textarea name="automation" class="rs-input-xlarge" placeholder="Comments" style="width:100%;"></textarea></td>
                   </tr>
                   <tr>
                       <td><h5>Standards</h5></td>
-                      <td><input type="radio" name="level1"></td>
-                      <td><input type="radio" name="level2"></td>
-                      <td><input type="radio" name="level3"></td>
-                      <td><input type="radio" name="level5"></td>
-                      <td><input type="radio" name="level8"></td>
+                      <td><input type="radio" name="standards" value="level1"></td>
+                      <td><input type="radio" name="standards" value="level2"></td>
+                      <td><input type="radio" name="standards" value="level3"></td>
+                      <td><input type="radio" name="standards" value="level5"></td>
+                      <td><input type="radio" name="standards" value="level8"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td colspan="5"><textarea name="standards" class="rs-input-xlarge" placeholder="Comments" style="width:100%;"></textarea></td>
                   </tr>
               </table>
             </div>
           </div>
-          <div class="rs-collapsible-section rs-detail-section collapsed">
-            <div class="rs-detail-section-header">
-              <div class="rs-caret"></div>
-              <div class="rs-detail-section-title">Optional Settings</div>
-              <div class="rs-detail-section-subtitle">This section is optional, so it&#39;s collapsed.</div>
-            </div>
-            <div class="rs-detail-section-body">
-              <div class="rs-control-group">
-                <label class="rs-control-label">Your Age</label>
-                <div class="rs-controls">
-                  <input type="text" class="rs-input-medium">
-                </div>
-              </div>
-              <div class="rs-control-group">
-                <label class="rs-control-label">Favorite Color</label>
-                <div class="rs-controls">
-                  <select>
-                    <option value="Yellow Ochre">Yellow Ochre</option>
-                    <option value="Green" selected="Amber">Amber</option>
-                    <option value="Sage">Sage</option>
-                    <option value="Azule">Azule</option>
-                    <option value="Kelly Green">Kelly Green</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="rs-detail-section">
             <div class="rs-detail-section-header rs-btn-group">
-              <button class="rs-btn rs-btn-primary" type="button">Create Item</button>
+              <button class="rs-btn rs-btn-primary" type="button">Submit</button>
               <a href="javascript:void(0);" class="rs-btn rs-btn-link">Cancel</a>
             </div>
           </div>
