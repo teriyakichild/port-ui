@@ -24,6 +24,8 @@ def run_server(handlers):
     tornado.options.parse_config_file('/etc/myui.conf')
     tornado.options.parse_command_line()
 
+    print 'Template Directory: {0}'.format(tornado.options.options.template_path)
+    print 'Static Directory: {0}'.format(tornado.options.options.static_path)
     settings = dict(
          app_title=tornado.options.options.app_title,
          template_path=tornado.options.options.template_path,
