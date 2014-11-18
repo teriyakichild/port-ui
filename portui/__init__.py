@@ -23,11 +23,13 @@ def main():
         print 'Controller[{0}] loaded'.format(controller)
 
     # Build handlers
+    print 'Adding routes..'
     handlers = []
     for controller in controllers:
         c = controllers[controller]
         uri_string = c.params.route
         handlers.append((uri_string, c.Handler))
+        print uri_string
 
     # Start tornado server
     run_server(handlers)
